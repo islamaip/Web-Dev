@@ -1,0 +1,156 @@
+body{
+    font-family: "Segoe UI", "SegoeUI" ,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.top-page{
+    position: relative;
+    top: 0px;
+    width: 1519px;
+    height: 54px;
+}
+
+#mic-logo{
+    position: absolute;
+    top: 13.5px;
+    left: 70px;
+    width: 108px;
+    height: 23px;
+}
+
+.top-page-text{
+    position: absolute;
+    left: 203px;
+    top: 6px;
+    font-size: 13px;
+    word-spacing: 14px;
+    cursor: pointer;
+}
+#m365{
+    word-spacing: normal;
+}
+#m365:hover, #off:hover, #wind:hover, #pod:hover{
+    text-decoration: underline;
+}
+
+.top-page-text2{
+    position: absolute;
+    top: 4px;
+    word-spacing: 14px;
+    right: 90px;
+    font-size: 13px;
+    cursor: pointer;
+}
+#sign{
+    position: absolute;
+    right: 43px;
+    top: 3px;
+    height: 40px;
+    width: 38px;
+}
+#search{
+    margin-right: 16px;
+    margin-left: 16px;
+}
+#products{
+    word-spacing: 2px;
+}
+#s-icon{
+    margin-right: 14px;
+    position: absolute;
+    top: 16px;
+    right: 125px;
+    height: 16px;
+    width: 16px;
+}
+#products:hover, #search:hover{
+    text-decoration: underline;
+}
+.main{
+    position: relative;
+    width: 1537px;
+    color: white;
+    cursor: pointer;
+}
+.banner{
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    color: white;
+    width: 450px;
+    z-index: 2;
+}
+#highlight{
+    position: absolute;
+    width: 1537px;
+    right: 9px;
+    z-index: 1;
+}
+#future{
+    line-height: 38.8px;
+}
+#next-gen{
+    line-height: 25px;
+}
+#check{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgb(0, 103, 184);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+#check:hover{
+    background-color: rgb(2, 84, 146);
+}
+
+.sub-main{
+    position: relative;
+    top: 600px;
+    left: 70px;
+}
+.m365{
+    width: 310px;
+}
+.m-header{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 21px;
+    font-weight: 500;
+}
+.desc{
+    margin-bottom: 16px;
+}
+.links{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(0,103,184);
+    cursor: pointer;
+    padding-bottom: 13px;
+}
+.links:hover{
+    text-decoration: underline;
+}
+#link1{
+    margin-right: 24px;
+}
+#m-edge{
+    position: absolute;
+    top: 0px;
+    left: 345px;
+}
+#m-drive{
+    position: absolute;
+    top: 0px;
+    left: 690px;
+}
+#m-note{
+    position: absolute;
+    top: 0px;
+    left: 1035px;
+}
