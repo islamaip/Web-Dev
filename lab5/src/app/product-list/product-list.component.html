@@ -1,0 +1,61 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+    <div *ngIf="product.category === category.name">
+        <img *ngIf="product.category == 'Phones'" src = '{{ product.images }}' width="130px" height="150px">
+        <img *ngIf="product.category == 'Laptops'" src = '{{ product.images }}' width="210px" height="150px">
+        <img *ngIf="product.category == 'TV'" src = '{{ product.images }}' width="200px" height="150px">
+        <img *ngIf="product.category == 'Appliances'" src = '{{ product.images }}' width="130px" height="150px">
+
+
+        <h3>
+            <a [title]="product.name + ' details'"
+                [routerLink]="['/products', product.id]">
+                {{ product.name }}
+            </a>
+        </h3>
+
+        <p *ngIf="product.description">
+            Description: {{ product.description }}
+        </p>
+
+        <p>
+            Rating: {{ product.rating }}
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/star-icon.png" width="16px" height="16px">
+        </p>
+
+        <p>
+            Likes: {{ product.likes }}
+        </p>
+
+        <a href="https://wa.me/?text={{ product.links }}" target="_blank">
+            <button type="button" (click)="share()">
+                Share
+            </button>
+        </a>
+
+        <a href="{{product.links}}" target="_blank">
+            <button type="button" class="kaspi-b">
+                Kaspi
+            </button>
+        </a>
+
+        <button class="like-button" (click)="onLiked(product)">
+            Like
+        </button>
+
+        <button class="remove-button" (click)="onRemove(product.name)">
+            Remove
+        </button>
+        <app-product-alerts
+                [product]="product"
+                (notify)="onNotify()">
+        </app-product-alerts>
+    </div>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
