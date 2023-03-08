@@ -1,0 +1,6 @@
+
+<img *ngFor="let photos of album"src="{{photos.thumbnailUrl}}">
+
+<button id="return" [routerLink]="['/albums', albumId]" >
+  Return back
+</button>

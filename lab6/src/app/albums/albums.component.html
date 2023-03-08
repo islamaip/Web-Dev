@@ -1,0 +1,19 @@
+<div *ngFor="let album of albums">
+  <div class="album-title" [routerLink]="['/albums',album.id]">
+    <p>{{album.title}}</p>
+  </div>
+  <button (click)="deleteAlbum(album.id)">
+    Delete
+  </button>
+</div>
+
+<div class="create-block">
+  <input type="text" placeholder="New album" [(ngModel)]="newAlbum.title"><br/>
+  <input placeholder="userId" [(ngModel)]="newAlbum.userId">
+  <input placeholder="ID" [(ngModel)]="newAlbum.id">
+  <button class="add-album" (click)="addAlbum()">Create</button>
+</div>
+
+<button class="home-button" [routerLink]="['/home']">
+  Home
+</button>

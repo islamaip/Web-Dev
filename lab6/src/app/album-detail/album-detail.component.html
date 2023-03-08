@@ -1,0 +1,10 @@
+<div>
+  <h2>{{album.id}} {{album.title}}</h2>
+  <input id="albumName" type="text" placeholder="Change name" [(ngModel)]="newName">
+  <button id="NewNameButton" (click)="ChangeName()">Save</button>
+</div>
+
+<button class = "return"[routerLink]="['/albums']">Return back</button>
+<button id="photo-button" [routerLink]="['/albums/',album.id,'photos']">
+  Photos
+</button>

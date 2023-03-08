@@ -1,0 +1,44 @@
+*{
+  font-family: Arial;
+}
+
+button{
+  cursor: pointer;
+}
+
+.return{
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 3px;
+  padding: 8px 10px;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.return:hover{
+  background-color: black;
+  color: white;
+}
+
+#NewNameButton{
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  margin-left: 8px;
+  transition: opacity 0.2s;
+}
+#NewNameButton:hover{
+  opacity: 0.7;
+}
+#photo-button{
+  padding: 8px 10px;
+  background-color: white;
+  color: darkgreen;
+  border-radius: 3px;
+  border: solid darkgreen;
+  transition: background-color 0.2s, color 0.2s;
+}
+#photo-button:hover{
+  background-color: darkgreen;
+  color: white;
+}
