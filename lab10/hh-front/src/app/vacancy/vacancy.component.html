@@ -1,0 +1,20 @@
+<fieldset>
+  <label>Vacancy name:</label>
+  <input type="text" [(ngModel)]="vacancyName" placeholder="Name">
+  <input type="text" [(ngModel)]="vacancyDesc" placeholder="Description">
+  <input type="number" [(ngModel)]="salary" placeholder="Salary">
+  <input type="number" [(ngModel)]="compName" placeholder="Company">
+  <button (click)="addVac()">Add company</button>
+</fieldset>
+
+<fieldset>
+  <label>Change vacancy name:</label>
+  <input type="number" [(ngModel)] = "vacancyId" placeholder="ID">
+  <input type="text" [(ngModel)]="newName" placeholder="Name">
+  <button (click)="changeVacancy()">Change</button>
+</fieldset>
+<div *ngFor="let vacancy of vacancies">
+  <h2>
+    {{vacancy.id}} - {{vacancy.name}} <button (click)="deleteVac(vacancy.id)">Delete</button>
+  </h2>
+</div>

@@ -1,0 +1,20 @@
+<h1>Company list:</h1>
+<fieldset>
+  <label>Company name:</label>
+  <input type="number" [(ngModel)] = "compId" placeholder="ID">
+  <input type="text" [(ngModel)]="newCompany" placeholder="Name">
+  <input type="text" [(ngModel)]="compCity" placeholder="City">
+  <input type="text" [(ngModel)]="compAddress" placeholder="Address">
+  <button (click)="addCompany()">Add company</button>
+</fieldset>
+  <label>Change company name:</label>
+  <input type="number" [(ngModel)] = "newId" placeholder="ID">
+  <input type="text" [(ngModel)]="newName" placeholder="Name">
+  <button (click)="changeName()">Change</button>
+<fieldset>
+
+</fieldset>
+<div *ngFor="let company of companies">
+  <h2 [routerLink]="['/companies/', company.id,'vacancies']">{{company.id}} - {{company.name}}</h2>
+  <button (click)="deleteCompany(company.id)">Delete</button>
+</div>
